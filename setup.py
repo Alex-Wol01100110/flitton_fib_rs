@@ -22,4 +22,11 @@ setup(
         "Operating System :: MacOS :: MacOS X",
     ],
     zip_safe=False,
+    entry_points={
+        'console_scripts': [
+            'fib-number = flitton_fib_rs.'
+            'fib_number_command:'
+            'fib_number_command',
+        ],
+    },
 )
