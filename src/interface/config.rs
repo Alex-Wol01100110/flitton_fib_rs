@@ -56,3 +56,4 @@ pub fn run_config<'a>(config: &'a PyDict) -> PyResult<&'a PyDict> {
         "parameter numbers is not in the config")
     }
     return Ok(config)
+}
