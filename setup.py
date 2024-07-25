@@ -32,7 +32,10 @@ setup(
             'config_number_command',
         ],
     },
-    requirements=[
-        "pyyaml>=3.13"
-    ]
+    # requirements=[
+    #     "pyyaml>=3.13"
+    # ]
+    install_requires=[
+        "PyYAML>=4.1.2",
+    ],
 )
