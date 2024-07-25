@@ -39,11 +39,12 @@ pub fn run_config<'a>(config: &'a PyDict) -> PyResult<&'a PyDict> {
         Some(data) => {
             match data.downcast::<PyList>() {
                 Ok(raw_data) => {
-                    let processed_results_two: Vec<Vec<i32>> =
-                    raw_data.extract::<Vec<Vec<i32>>>(
-                    ).unwrap();
-                    config.set_item("NUMBERS RESULT",
-                    process_numbers(processed_results_two));
+                    let processed_results_two: Vec<Vec<i32>> = 
+                    raw_data.extract::<Vec<Vec<i32>>>().unwrap();
+                    config.set_item(
+                        "NUMBERS RESULT",
+                        process_numbers(processed_results_two)
+                    );
                 },
                 Err(_) => Err(PyTypeError::new_err(
                 "parameter numbers is not a list of lists of
