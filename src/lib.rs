@@ -23,5 +23,6 @@ fn flitton_fib_rs(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(fibonacci_numbers));
     m.add_wrapped(wrap_pyfunction!(run_config));
     m.add_wrapped(wrap_pyfunction!(object_interface));
+    m.add_class::<FibProcessor>()?;
     Ok(())
 }
