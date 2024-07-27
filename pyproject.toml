@@ -39,8 +39,3 @@ config-fib = "flitton_fib_rs.config_number_command:config_number_command"
 
 [tool.setuptools.packages.find]
 where = ["flitton_fib_rs"]
-
-[tool.setuptools]
-rust-extensions = [
-    {module = "flitton_fib_rs.flitton_fib_rs", path = "Cargo.toml", binding = "PyO3"},
-]
