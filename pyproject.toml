@@ -19,6 +19,11 @@ classifiers = [
     "Operating System :: MacOS :: MacOS X",
 ]
 
+dependencies = [
+    "PyYAML>=4.1.2",
+    "numpy>=1.0.1",
+]
+
 [project.urls]
 homepage = "https://github.com/Alex-Wol01100110/flitton_fib_rs/tree/master"
 repository = "https://github.com/Alex-Wol01100110/flitton_fib_rs/tree/master"
@@ -31,10 +36,6 @@ dev = [
 [project.scripts]
 fib-number = "flitton_fib_rs.fib_number_command:fib_number_command"
 config-fib = "flitton_fib_rs.config_number_command:config_number_command"
-
-[project.dependencies]
-PyYAML = ">=4.1.2"
-numpy = "^2.0.1"
 
 [tool.setuptools.packages.find]
 where = ["flitton_fib_rs"]
