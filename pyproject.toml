@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=62.4", "setuptools_rust"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flitton-fib-rs"
+description = "Example of the fib funcs."
+dynamic = ["version"]
+requires-python = ">= 3.8"
+packages=["flitton_fib_rs"]
+classifiers=[
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Rust",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+]
+dependencies = [
+  "httpx",
+  "gidgethub[httpx]>4.0.0",
+  "django>2.1; os_name != 'nt'",
+  "django>2.0; os_name == 'nt'",
+]
+
+[project.optional-dependencies]
+gui = ["PyQt5"]
+cli = [
+  "rich",
+  "click",
+]
