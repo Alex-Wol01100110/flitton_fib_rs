@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "flitton-fib-rs"
-version = "0.1"
+version = "0.0.1"
 description = ""
 readme = ""
 requires-python = ">=3.6"
