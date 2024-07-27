@@ -37,6 +37,6 @@ setup(
     # ]
     install_requires=[
         "PyYAML>=4.1.2",
-        "numpy=2.0.1",
+        "numpy=^2.0.1",
     ],
 )
